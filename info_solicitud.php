@@ -61,7 +61,7 @@
                            ?>
                               <tr>
                                 <td><?php print $row['id_ticket']; ?></td>
-                                <td><?php print $row['fcreacion'];  ?></td>
+                                <td><?php print $row['fcreacion']->format("d/m/Y");  ?></td>
                                 <td><?php print $row['nombre'];  ?></td>
                                 <td><?php print $row['servicio'];  ?></td>
                                 <td><?php print $row['descripcion'];  ?></td>
