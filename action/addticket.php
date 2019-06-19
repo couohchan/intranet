@@ -13,6 +13,7 @@
   $solicitante = $_POST["kind_id"];
   //$adjunto = $_POST["adjunto"];
   //$created_at="NOW()";
+$fecha = date("d/m/Y");
 
   if (isset($_FILES["file"]))
   {
@@ -61,29 +62,29 @@
   if (isset($errors)){
 
       ?>
-  <div class="alert alert-danger" role="alert">
-  <button type="button" class="close" data-dismiss="alert">&times;</button>
-  <strong>Error!</strong>
-  <?php
+<div class="alert alert-danger" role="alert">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Error!</strong>
+    <?php
                   foreach ($errors as $error) {
                           echo $error;
                       }
                   ?>
-  </div>
-  <?php
+</div>
+<?php
       }
       if (isset($messages)){
 
           ?>
-  <div class="alert alert-success" role="alert">
-  <button type="button" class="close" data-dismiss="alert">&times;</button>
-  <strong>¡Bien hecho!</strong>
-  <?php
+<div class="alert alert-success" role="alert">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>¡Bien hecho!</strong>
+    <?php
                       foreach ($messages as $message) {
                               echo $message;
                           }
                       ?>
-  </div>
-  <?php
+</div>
+<?php
       }
 ?>
