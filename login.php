@@ -48,8 +48,7 @@
     //consulta a la base de datos para saber si el usuario ingresado es correcto o no.
     function verificar_login($user,$password,&$result)
         {  
-            //$serverName = "covi-pc"; //serverName\instanceName
-            $serverName = "SKYNET\INTRANET";
+            $serverName = "DESKTOP-SNFQJCJ";
             //$serverName = "servconta\compac";
             $datos = "serviweb";
 

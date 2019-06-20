@@ -64,7 +64,7 @@
                                 <td><?php print $row['fcreacion']->format("d/m/Y");  ?></td>
                                 <td><?php print $row['nombre'];  ?></td>
                                 <td><?php print $row['servicio'];  ?></td>
-                                <td><?php print $row['descripcion'];  ?></td>
+                                <td><?php print $row['descripcion']; ?></td>
                                 <td><a target="_blank" href="img/adjuntos/<?php print $row['adjunto']; ?>"><?php print $row['adjunto']; ?></a></td>
                                 <?php if($row['estado'] == 'AC'){ ?>
                                 <td><span class="label label-success">Activo</span></td>
